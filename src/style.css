@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #16213E;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: 20vh 1fr 38vh 20vh;
+}
+
+.words {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 3px;
+    width: 400px;
+    background-color: #ffff;
+    padding: 20px;
+}
+
+.word-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.words .input form {
+    width: 100%;
+    display: flex;
+}
+
+.words .input form input {
+    width: 80%;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5)
+}
+
+.words .input form button {
+    width: 20%;
+    padding: 10px;
+    background-color: #0F3460;
+    color: #ffff;
+    font-size: 20px;
+    margin: 1px;
+    border-radius: 3px;
+    border: none;
+}
+
+.words .words-items {
+}
+
+.words .words-items ul {
+    list-style: none;
+}
+
+.words .words-items ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    margin: 6px auto;
+}
+
+.words .words-items ul li p {
+    padding: 10px;
+}
+
+
+
+.footer {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #A27B5C;
+    color: #ffff;
+}
+
+.footer .bx {
+    font-size: 30px;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0px 20px;
+}
+
+.footer a {
+    color: #ffff;
+}
+
+.footer p {
+    color: #ffff;
+    margin-top: 5px
+}
